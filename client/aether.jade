@@ -1,0 +1,13 @@
+head
+  title Aether
+
+body
+  {{>battlefield}}
+
+template(name="battlefield")
+  {{#each cards}}
+    {{>card}}
+  {{/each}}
+
+template(name="card")
+  img.card(src="{{image_url}}")

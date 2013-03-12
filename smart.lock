@@ -1,0 +1,31 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "devel",
+    "commit": "0bac1b3e2d356c16d806c4c2bfc763d56cb9f67c"
+  },
+  "dependencies": {
+    "basePackages": {
+      "stylus-mixin": {},
+      "jade-handlebars": {},
+      "jquery-ui": {}
+    },
+    "packages": {
+      "stylus-mixin": {
+        "git": "https://github.com/Charuru/stylus-mixin.git",
+        "tag": "v1.1.0",
+        "commit": "30483b684d044c09209882ed49fa4a9907300fcf"
+      },
+      "jade-handlebars": {
+        "git": "https://github.com/SimonDegraeve/meteor-jade-handlebars.git",
+        "tag": "v0.2.7",
+        "commit": "82f6f9ac43a68ffabe1d9b9620be2a4ca6790b56"
+      },
+      "jquery-ui": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
+        "tag": "v1.9.2",
+        "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
+      }
+    }
+  }
+}
