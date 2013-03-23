@@ -17,7 +17,7 @@ Meteor.methods
         image_url: "http://magiccards.info/scans/en/#{set}/#{parseInt $('td', $(el).html()).eq(0).text()}.jpg"
 
       for i, card of cards
-        MagicCard.create(card)
+        MagicCardSource.create(card)
 
 
   scrapeCard: (url) ->
@@ -27,3 +27,6 @@ Meteor.methods
     if result.statusCode is 200
       $ = cheerio.load(result.content)
       $("#ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_cardImage").attr("src")
+
+  clearCollections: ->
+    MagicCardSource.destroyAll()
