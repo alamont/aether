@@ -30,8 +30,6 @@ Meteor.startup ->
 
 Deps.autorun ->
   if Session.get("dropTarget") != null && Session.get("dropSource") != null
-    console.log Session.get "dropTarget" 
-    console.log Session.get "dropSource"
     console.log GameCard.findOne {num: Session.get "dropSource"}
     console.log GameCard.findOne {num: Session.get "dropTarget"}
     Session.set "dropTarget", null
